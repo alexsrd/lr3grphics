@@ -56,9 +56,9 @@ namespace lr3grphics
             return ProjectionAffinity.RotateZ3D(polygons, Angle, RotCentre);
         }
 
-        public PointF3D[] Scale(PointF3D ScalVals, PointF3D ScalCentre)
+        public PointF3D[] Scale(PointF3D ScalVal, PointF3D ScalCentre)
         {
-            return ProjectionAffinity.Scale3D(polygons, ScalVals.X, ScalVals.Y, ScalVals.Z, ScalCentre);
+            return ProjectionAffinity.Scale3D(polygons, ScalVal.X, ScalVal.Y, ScalVal.Z, ScalCentre);
         }
     }
 }
